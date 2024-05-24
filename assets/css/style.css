@@ -1,0 +1,296 @@
+/* Import FontFamily */
+@import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #3a0909;
+  --body-bg-color: #ab0007;
+  --hero-bg-color: linear-gradient(to right, #3a0909, #000000);
+  --text-color: #fff;
+  --gray-color: #cecdcd;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Kufam", Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--body-bg-color);
+  display: grid;
+  place-items: center;
+}
+
+.hero {
+  width: 75%;
+  height: 80%;
+  position: relative;
+  background: var(--hero-bg-color);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.hero header {
+  width: 100%;
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.hero header .navbar ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: normal;
+  transition: 0.3s all linear;
+  -webkit-transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  -ms-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear;
+}
+
+.hero header .navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+.hero header .user i {
+  background-color: #fff;
+  color: #000000;
+  padding: 7px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s all linear;
+  -webkit-transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  -ms-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear;
+}
+
+.hero header .user i:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.hero header .user i:last-child {
+  display: none;
+}
+
+.hero main {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 5%;
+}
+
+.hero main .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero main .left .game-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero main .left .game-info h1 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.hero main .left .game-info p {
+  color: var(--gray-color);
+}
+
+.hero main .left .game-info .btns button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.hero main .left .game-info .btns button a {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.hero main .left .social-media h4 {
+  margin-bottom: 10px;
+}
+
+.hero main .left .social-media .icons i {
+  padding: 7px;
+  margin-right: 5px;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s all linear;
+  -webkit-transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  -ms-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear;
+  cursor: pointer;
+}
+
+.hero main .left .social-media .icons i:hover {
+  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+}
+
+.hero main .right {
+  width: 50%;
+  height: 100%;
+}
+
+.hero main .right img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero footer {
+  width: 90%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+}
+
+.hero footer h1#title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hero footer .slider {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.hero footer .slider .box {
+  flex: none;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.hero footer .slider .box img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s all linear;
+  -webkit-transition: 0.3s all linear;
+  -moz-transition: 0.3s all linear;
+  -ms-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear;
+}
+
+.hero footer .slider .box img:hover {
+  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 90%;
+    height: 90%;
+  }
+  header .navbar {
+    display: none;
+  }
+  header .user i {
+    padding: 10px;
+  }
+  header .user i:last-child {
+    display: inline-block !important;
+  }
+  .hero footer .slider {
+    overflow-x: auto;
+  }
+  .hero main {
+    height: 68.5%;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .hero main .right {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  .hero main .right img {
+    width: 50%;
+  }
+  .hero main .left {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  body {
+    display: block;
+  }
+  .hero {
+    width: 95%;
+    height: 90%;
+    margin: 5% auto;
+  }
+  .hero footer .slider .box {
+    width: 150px;
+  }
+  .hero main .left {
+    margin-bottom: 10%;
+  }
+}
