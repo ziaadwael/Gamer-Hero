@@ -2,6 +2,8 @@
 
 Welcome to The Gamer Website, your ultimate destination for all things gaming. Whether you're a seasoned gamer or just starting your journey, our platform offers a rich array of resources, articles, and community features to enhance your gaming experience.
 
+![GamerHero Screenshot](https://i.postimg.cc/jjxc0p9t/gamerhero.png)
+
 ## Introduction
 
 The Gamer Website is designed to cater to the diverse needs of gamers worldwide. With a sleek and intuitive interface built using HTML and CSS, our website provides easy access to gaming news, reviews, tutorials, and more. Join our community of passionate gamers and immerse yourself in the world of gaming like never before.
